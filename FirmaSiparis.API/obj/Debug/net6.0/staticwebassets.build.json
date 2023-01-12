@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TYQKCFvwtk3rarfktCprs95fGkc/r9TDU8nKc6UE1zc=",
+  "Source": "FirmaSiparis.API",
+  "BasePath": "_content/FirmaSiparis.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+D:\repos\FirmaSiparis\EL\bin\Debug\net6.0\EL.deps.json
+D:\repos\FirmaSiparis\EL\bin\Debug\net6.0\EL.dll
+D:\repos\FirmaSiparis\EL\bin\Debug\net6.0\EL.pdb
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.csproj.AssemblyReference.cache
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.AssemblyInfoInputs.cache
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.AssemblyInfo.cs
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.csproj.CoreCompileInputs.cache
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.dll
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\refint\EL.dll
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\EL.pdb
+D:\repos\FirmaSiparis\EL\obj\Debug\net6.0\ref\EL.dll
