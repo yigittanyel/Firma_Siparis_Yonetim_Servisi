@@ -74,3 +74,6 @@ D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\Humanizer.dll
 D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\Utility.dll
 D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\Utility.pdb
+D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\MediatR.dll
+D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\repos\FirmaSiparis\FirmaSiparis.API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

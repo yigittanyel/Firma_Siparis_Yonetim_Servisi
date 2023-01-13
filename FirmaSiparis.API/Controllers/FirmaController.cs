@@ -1,6 +1,9 @@
 ﻿using BL.Services.IServices;
 using DTO.DTOs;
 using EL.Entities;
+using FirmaSiparis.API.CQRS.Commands.FirmaCommands;
+using FirmaSiparis.API.CQRS.Queries.FirmaQueries;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,9 +14,11 @@ namespace FirmaSiparis.API.Controllers
     public class FirmaController : ControllerBase
     {
         private readonly IFirmaService _firmaService;
-        public FirmaController(IFirmaService firmaService)
+        private readonly IMediator _mediator;
+        public FirmaController(IFirmaService firmaService, IMediator mediator)
         {
             _firmaService = firmaService;
+            _mediator = mediator;
         }
 
         [HttpGet("getfirmas")]
@@ -21,7 +26,8 @@ namespace FirmaSiparis.API.Controllers
         {
             try
             {
-                return Ok(await _firmaService.GetFirmas());
+                var values = await _mediator.Send(new GetAllFirmaQuery());
+                return Ok(values);
             }
             catch (Exception)
             {
@@ -32,22 +38,17 @@ namespace FirmaSiparis.API.Controllers
         [HttpGet("getfirma")]
         public async Task<IActionResult> GetFirma(int firmaId)
         {
-            try
-            {
-                return Ok(await _firmaService.GetFirma(firmaId));
-            }
-            catch (Exception)
-            {
-                return BadRequest("Bir hatayla karşılaşıldı!");
-            }
+            var values = await _mediator.Send(new GetFirmaByIdQuery(firmaId));
+            return Ok(values);
         }
 
         [HttpPost("addfirma")]
-        public async Task<IActionResult> AddFirma(FirmaToAddDTO firmaDto)
+        public async Task<IActionResult> AddFirma(CreateFirmaCommand command)
         {
             try
             {
-                return Ok(await _firmaService.AddFirma(firmaDto));
+               var values= await _mediator.Send(command);
+                return Ok(values);
             }
             catch (Exception)
             {
@@ -55,17 +56,30 @@ namespace FirmaSiparis.API.Controllers
             }
         }
 
+        //[HttpPost("addfirma")]
+        //public async Task<IActionResult> AddFirma(FirmaToAddDTO firmaDto)
+        //{
+        //    try
+        //    {
+        //        return Ok(await _firmaService.AddFirma(firmaDto));
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return BadRequest("Bir hatayla karşılaşıldı!");
+        //    }
+        //}
+
         [HttpPut("updatefirma")]
-        public async Task<IActionResult> UpdateFirma(FirmaDTO firmaDto)
+    public async Task<IActionResult> UpdateFirma(FirmaDTO firmaDto)
+    {
+        try
         {
-            try
-            {
-                return Ok(await _firmaService.UpdateFirma(firmaDto));
-            }
-            catch (Exception)
-            {
-                return BadRequest("Bir hatayla karşılaşıldı!");
-            }
+            return Ok(await _firmaService.UpdateFirma(firmaDto));
+        }
+        catch (Exception)
+        {
+            return BadRequest("Bir hatayla karşılaşıldı!");
         }
     }
+}
 }

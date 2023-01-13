@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i+M1S+n0CVtUlYi1FboQ6JkTLEbqFSq9TspDtcucFHjGOCwrDvZ3YkAgRauzabAegBAia7yb25qOtYnz/V5EEA==",
+  "dgSpecHash": "559tMyF/HvJk73bhHQe1ZKxtHHKCAPvy08A8l2RrTa30WerCQxTUVTXPR1klADHLSfDycwMr5auIs/mcEgOSJw==",
   "success": true,
   "projectFilePath": "D:\\repos\\FirmaSiparis\\FirmaSiparis.API\\FirmaSiparis.API.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\MSI\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

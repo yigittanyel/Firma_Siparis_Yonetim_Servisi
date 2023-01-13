@@ -3,6 +3,7 @@ using BL.Services.IServices;
 using DAL.DataContext;
 using DAL.Repository;
 using DAL.Repository.IRepositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Utility.Utilities;
@@ -33,6 +34,8 @@ builder.Services.AddDbContext<Context>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
 });
+
+builder.Services.AddMediatR(typeof(Program));
 
 #endregion
 

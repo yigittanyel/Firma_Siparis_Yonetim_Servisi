@@ -24,8 +24,8 @@ namespace BL.Services
 
         public async Task<SiparisDTO> AddSiparis(SiparisDTO siparisDto)
         {
-            var addedSiparis = await _siparisRepository.Add(_mapper.Map<Siparis>(siparisDto));
-            return _mapper.Map<SiparisDTO>(addedSiparis);
+            var siparis = await _siparisRepository.Add(_mapper.Map<Siparis>(siparisDto));
+            return _mapper.Map<SiparisDTO>(siparis);
         }
     }
 }
